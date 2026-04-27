@@ -1,15 +1,16 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-
+const dotenv = require("dotenv");
+dotenv.config();
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/fusion")
-  .then(() => console.log("Connected to MongoDB"))
-  .catch(err => console.error("MongoDB connection error:", err));
+mongoose.connect(process.env.Mongo_Url)
+    .then(() => console.log("Connected to MongoDB"))
+    .catch(err => console.error("MongoDB connection error:", err));
 
 const questionSchema = new mongoose.Schema({
     ownership: String,
@@ -43,12 +44,12 @@ const votingQuestions = [
 ];
 
 const votingOptions = [
-    { id: "o1", name: "Yuvaraj" }, { id: "o2", name: "Basavaprabhu" }, { id: "o3", name: "Anto" },
+    { id: "o1", name: "Rakshit" }, { id: "o2", name: "Basavaprabhu" }, { id: "o3", name: "Anto" },
     { id: "o4", name: "Smitha" }, { id: "o5", name: "Sibila" }, { id: "o6", name: "Nazia" },
     { id: "o7", name: "Umesh" }, { id: "o8", name: "Sheela" }, { id: "o9", name: "Rakesh" },
     { id: "o10", name: "Safinz" }, { id: "o11", name: "Maheen" }, { id: "o12", name: "Mitali" },
     { id: "o13", name: "Murali" }, { id: "o14", name: "Rubina" }, { id: "o15", name: "Salma" },
-    { id: "o16", name: "Anuja" }, { id: "o17", name: "Rakshit" }, { id: "o18", name: "Anapurnima" },
+    { id: "o16", name: "Anuja" }, { id: "o17", name: "Yuvaraj" }, { id: "o18", name: "Anapurnima" },
     { id: "o19", name: "Netra" }, { id: "o20", name: "Mansa" }, { id: "o21", name: "Chandana" },
     { id: "o22", name: "Kishor" }, { id: "o23", name: "Sharn" }, { id: "o24", name: "Jeevan" },
     { id: "o25", name: "Shashikala" }, { id: "o26", name: "Naveen" }, { id: "o27", name: "Abhishek" },
