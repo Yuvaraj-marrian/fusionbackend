@@ -26,35 +26,33 @@ const gameSchema = new mongoose.Schema({
 const Game = mongoose.model("Game", gameSchema);
 
 const votingQuestions = [
-    { id: "q1", text: "What the office thinks is the best actor (pretends to work the most)" },
-    { id: "q2", text: "What the office thinks says “I’m busy” but is actually free" },
-    { id: "q3", text: "What the office thinks is the master of doing minimum work" },
-    { id: "q4", text: "What the office thinks gives the longest useless explanations" },
-    { id: "q5", text: "What the office thinks will say “let’s connect later” and never does" },
-    { id: "q6", text: "What the office thinks is always confused but nods anyway" },
-    { id: "q7", text: "What the office thinks survives only on copying others’ work 😄" },
-    { id: "q8", text: "What the office thinks is most likely to disappear during work hours" },
-    { id: "q9", text: "What the office thinks takes the longest breaks" },
-    { id: "q10", text: "What the office thinks is the king/queen of excuses" },
-    { id: "q11", text: "What the office thinks is most likely to open laptop just to look busy" },
-    { id: "q12", text: "What the office thinks replies “noted” and does nothing" },
-    { id: "q13", text: "What the office thinks stretches a 10-minute task into 2 hours" },
-    { id: "q14", text: "What the office thinks panics the most when boss asks a question" },
-    { id: "q15", text: "What the office thinks is secretly the laziest but looks professional" }
+    { id: "q1", text: "Who is the best actor (pretends to work the most)😄" },
+    { id: "q2", text: "Who says “I’m busy” but is actually free😄 " },
+    { id: "q3", text: "Who is the master of doing minimum work😄 " },
+    { id: "q4", text: "Who gives the longest/useless explanations😄 " },
+    { id: "q5", text: "Who will say “let’s connect later” and never does 😄" },
+    { id: "q6", text: "Who is always confused but nods anyway😄 " },
+    { id: "q7", text: "Who survives only on copying others’ work😄 " },
+    { id: "q8", text: "Who is most likely to disappear during work hours😄 " },
+    { id: "q9", text: "Who takes the longest breaks 😄" },
+    { id: "q10", text: "Who is the king/queen of excuses 😄" },
+    { id: "q11", text: "Who replies “noted” and does nothing 😄" },
+    { id: "q12", text: "Who stretches a 10-minute task into 2 hours😄 " },
+    { id: "q13", text: "Who panics the most when boss asks a question😄 " },
 ];
 
 const votingOptions = [
     { id: "o1", name: "Rakshit" }, { id: "o2", name: "Basavaprabhu" }, { id: "o3", name: "Anto" },
     { id: "o4", name: "Smitha" }, { id: "o5", name: "Sibila" }, { id: "o6", name: "Nazia" },
     { id: "o7", name: "Umesh" }, { id: "o8", name: "Sheela" }, { id: "o9", name: "Rakesh" },
-    { id: "o10", name: "Safinz" }, { id: "o11", name: "Maheen" }, { id: "o12", name: "Mitali" },
+    { id: "o10", name: "Safina" }, { id: "o11", name: "Maheen" }, { id: "o12", name: "Mitali" },
     { id: "o13", name: "Murali" }, { id: "o14", name: "Rubina" }, { id: "o15", name: "Salma" },
-    { id: "o16", name: "Anuja" }, { id: "o17", name: "Yuvaraj" }, { id: "o18", name: "Anapurnima" },
-    { id: "o19", name: "Netra" }, { id: "o20", name: "Mansa" }, { id: "o21", name: "Chandana" },
-    { id: "o22", name: "Kishor" }, { id: "o23", name: "Sharn" }, { id: "o24", name: "Jeevan" },
+    { id: "o16", name: "Anuja" }, { id: "o17", name: "Yuvaraj" }, { id: "o18", name: "Annapoornima" },
+    { id: "o19", name: "Netra" }, { id: "o20", name: "Manasa" }, { id: "o21", name: "Chandana" },
+    { id: "o22", name: "Kishore" }, { id: "o23", name: "Sharan" }, { id: "o24", name: "Jeevan" },
     { id: "o25", name: "Shashikala" }, { id: "o26", name: "Naveen" }, { id: "o27", name: "Abhishek" },
     { id: "o28", name: "Pradeep" }, { id: "o29", name: "Antony" }, { id: "o30", name: "RamKrishna" },
-    { id: "o31", name: "Nitin" }, { id: "o32", name: "Ramchandra" }, { id: "o33", name: "Prasanna" }
+    { id: "o31", name: "Nitin" }, { id: "o32", name: "Ramachandra" }, { id: "o33", name: "Prasanna" }
 ];
 
 const voteSchema = new mongoose.Schema({
