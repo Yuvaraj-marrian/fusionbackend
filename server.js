@@ -26,19 +26,16 @@ const gameSchema = new mongoose.Schema({
 const Game = mongoose.model("Game", gameSchema);
 
 const votingQuestions = [
-    { id: "q1", text: "Who is the best actor (pretends to work the most)😄" },
-    { id: "q2", text: "Who says “I’m busy” but is actually free😄 " },
-    { id: "q3", text: "Who is the master of doing minimum work😄 " },
-    { id: "q4", text: "Who gives the longest/useless explanations😄 " },
-    { id: "q5", text: "Who will say “let’s connect later” and never does 😄" },
-    { id: "q6", text: "Who is always confused but nods anyway😄 " },
-    { id: "q7", text: "Who survives only on copying others’ work😄 " },
-    { id: "q8", text: "Who is most likely to disappear during work hours😄 " },
-    { id: "q9", text: "Who takes the longest breaks 😄" },
-    { id: "q10", text: "Who is the king/queen of excuses 😄" },
-    { id: "q11", text: "Who replies “noted” and does nothing 😄" },
-    { id: "q12", text: "Who stretches a 10-minute task into 2 hours😄 " },
-    { id: "q13", text: "Who panics the most when boss asks a question😄 " },
+    { id: "q1", text: "Who is the best actor (pretends to work the most)😄 ?" },
+    { id: "q2", text: "Who says “I’m busy” but is actually free😄 ?" },
+    { id: "q3", text: "Who is the master of doing minimum work😄 ?" },
+    { id: "q4", text: "Who gives the longest/useless explanations😄 ?" },
+    { id: "q5", text: "Who will say “let’s connect later” and never does😄 ?" },
+    { id: "q6", text: "Who is always confused but nods anyway😄 ?" },
+    { id: "q7", text: "Who is the king/queen of excuses😄 ?" },
+    { id: "q8", text: "Who is most likely to disappear during work hours😄 ?" },
+    { id: "q9", text: "Who always looks sick in office😄 ?" },
+    { id: "q10", text: "Who vanishes from office exactly at 6:29😄 ?" },
 ];
 
 const votingOptions = [
