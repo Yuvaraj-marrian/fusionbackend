@@ -36,6 +36,8 @@ const votingQuestions = [
     { id: "q8", text: "Who is most likely to disappear during work hours😄 ?" },
     { id: "q9", text: "Who always looks sick in office😄 ?" },
     { id: "q10", text: "Who vanishes from office exactly at 6:29😄 ?" },
+    { id: "q11", text: "Who spoils the cafeteria?😄 " },
+    { id: "q12", text: "Who says they’re on a diet while sneaking all those snacks?29😄 " },
 ];
 
 const votingOptions = [
